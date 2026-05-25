@@ -1,0 +1,11 @@
+@url = http://localhost:3000/plataformas
+
+GET {{url}}
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "nome": "PC"
+}

@@ -1,0 +1,21 @@
+@url = http://localhost:3000/jogos
+
+GET {{url}}
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "titulo": "Elden Ring",
+    "generoId": 1,
+    "plataformasIds": [1, 2]
+}
+
+###
+POST {{url}}/1/plataformas
+Content-Type: application/json
+
+{
+    "plataformasIds": [3]
+}
